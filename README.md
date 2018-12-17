@@ -3,18 +3,14 @@ TypeScript for Beginners
 
 ## Topics
 * [Requirements](#requirements)
-  * Code Editor (VSCode)
-  * nodejs version 10+
 * [Getting Started](#getting-started)
 * [What is TypeScript?](#what-is-typescript)
 * [TypeScript Hello World](#typescript-hello-world)
 * [Basic Types](#basic-types)
 * [For Loop](#for-loop)
 * [Class and interface](#class-and-interface)
-* import and export
-* tsconfig.json config
+* [import and export](#import-and-export)
 * Build Simple Calculator App
-* Build tools
 
 <br />
 
@@ -170,6 +166,23 @@ let greeter = new Greeter("world");
 ```
 <br />
 
+#### Hands on
+* My Personal Information
+  * Create a class that accepts 3 parameters in constructor
+    * firstName type of string
+    * lastName type of string
+    * age type of number
+  * In a class you should have 3 properties
+    * firstName type of string
+    * lastName type of string
+    * age type of number 
+  * In a class you should have displayInfo method and return the following:
+  ```
+  Hello my name is [fistName] [lastName], age [age]
+  ```
+  * Use `template string`
+  * Use console.log to diplay the output of your function 
+
 ### Inheritance
 In TypeScript, we can use common object-oriented patterns. One of the most fundamental patterns in class-based programming is being able to extend existing classes to create new ones using inheritance.
 <br />
@@ -192,6 +205,104 @@ dog.bark();
 dog.move(10);
 dog.bark();
 ```
+<br />
+
+#### Hands on
+* My Personal Information
+  * Create base class i.e Person
+  * In a class you should have 3 properties
+    * firstName type of string
+    * lastName type of string
+    * age type of number 
+  * Create child class i.e MyInfo
+  * extends base or parent class to child class
+  * Child class should have 3 parameters in constructor
+    * firstName type of string
+    * lastName type of string
+    * age type of number
+  * In a class you should have displayInfo method and return the following:
+  ```
+  Hello my name is [fistName] [lastName], age [age]
+  ```
+  * Use `template string`
+  * Use console.log to diplay the output of your function 
+<br />
+
+### Interface
+In TypeScript, interfaces fill the role of naming these types, and are a powerful way of defining contracts within your code as well as contracts with code outside of your project.
+<br />
+<br />
+Simple interface example:
+```typescript
+function printLabel(labelledObj: { label: string }) {
+  console.log(labelledObj.label);
+}
+
+let myObj = {size: 10, label: "Size 10 Object"};
+printLabel(myObj);
+```
+<br />
+
+Using `interface` keyword
+```typescript
+interface SampleLabelValue {
+  label: string;
+}
+
+function printLabel(labelledObj: SampleLabelValue) {
+    console.log(labelledObj.label);
+}
+
+let myObj = {size: 10, label: "Size 10 Object"};
+printLabel(myObj);
+```
+<br />
+
+#### Hands on
+* My Personal Information
+  * Create interface that has properties of following:
+    * firstName type of string
+    * lastName type of string
+    * age type of number
+  * Create a class that accepts interface in the constructor
+  * Use `implements` to have the construct of interface
+  * In a class you should have displayInfo method and return the following:
+  ```
+  Hello my name is [fistName] [lastName], age [age]
+  ```
+  * Use `template string`
+  * Use console.log to diplay the output of your function 
+<br />
+
+## import and export
+Starting with ECMAScript 2015, JavaScript has a concept of modules. TypeScript shares this concept.
+<br />
+<br />
+Modules are executed within their own scope, not in the global scope; this means that variables, functions, classes, etc. declared in a module are not visible outside the module unless they are explicitly exported using one of the export forms. Conversely, to consume a variable, function, class, interface, etc. exported from a different module, it has to be imported using one of the import forms.
+<br />
+
+### export 
+Any declaration (such as a variable, function, class, type alias, or interface) can be exported by adding the export keyword.
+```typescript
+export interface SampleLabelValue {
+  label: string;
+}
+```
+or
+```typescript
+interface SampleLabelValue {
+  label: string;
+}
+
+export { SampleLabelValue }
+```
+<br />
+
+### import
+```typescript
+import { SampleLabelValue } from './sample-label-value';
+```
+  
 
 
 

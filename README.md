@@ -10,7 +10,7 @@ TypeScript for Beginners
 * [TypeScript Hello World](#typescript-hello-world)
 * [Basic Types](#basic-types)
 * [For Loop](#for-loop)
-* Class, Interface, Inheritance, function or arrow functions
+* [Class and interface](#class-and-interface)
 * import and export
 * tsconfig.json config
 * Build Simple Calculator App
@@ -123,5 +123,75 @@ for (let i = 0; i < list.length; i++) {
   console.log(list[i]);
 }
 ```
+
+## Hands on
+* My Personal Information
+  * Create a function that accept 3 parameters
+    * firstName type of string
+    * lastName type of string
+    * age type of number
+  * Output of you function should be:
+    ```
+      Hello my name is [fistName] [lastName], age [age]
+    ```
+  * Use `template string`
+  * Use console.log to diplay the output of your function
+* My Favorite Musics
+  * Create a function that accept array of strings
+    * musics type of Array of strings
+  * Display each of the item using for loop
+  * use console.log
+<br />
+
+## Class and Interface
+### Class
+JavaScript classes, introduced in ECMAScript 2015, are primarily syntactical sugar over JavaScript's existing prototype-based inheritance.
+<br />
+<br />
+Simple class-base example:
+```typescript
+class Greeter {
+    
+    /// property
+    greeting: string;
+
+    /// constructor
+    constructor(message: string) {
+      this.greeting = message;
+    }
+
+    /// method
+    greet() {
+      return "Hello, " + this.greeting;
+    }
+}
+
+let greeter = new Greeter("world");
+```
+<br />
+
+### Inheritance
+In TypeScript, we can use common object-oriented patterns. One of the most fundamental patterns in class-based programming is being able to extend existing classes to create new ones using inheritance.
+<br />
+<br />
+```typescript
+class Animal {
+  move(distanceInMeters: number = 0) {
+    console.log(`Animal moved ${distanceInMeters}m.`);
+  }
+}
+
+class Dog extends Animal {
+  bark() {
+    console.log('Woof! Woof!');
+  }
+}
+
+const dog = new Dog();
+dog.bark();
+dog.move(10);
+dog.bark();
+```
+
 
 

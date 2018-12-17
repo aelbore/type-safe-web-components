@@ -35,8 +35,10 @@ TypeScript for Beginners
 
 ### Getting Started
   ```
-  npm init
-  npm install --save-dev ts-node typescript http-server
+  git clone https://github.com/aelbore/type-safe-web-components.git
+  git checkout ts-101
+  
+  npm install
   ```
 
 <br />
@@ -51,20 +53,7 @@ TypeScript for Beginners
 <br />
 
 ### TypeScript Hello World
-* Create index.ts file
-* Add following code
-  ```typescript
-  function helloWorld(name: string) {
-    return `Hello World ${name}`;
-  }
-
-  console.log(helloWorld('Joe'))
-  ``` 
-* Add `start` script in package.json
-  ```
-  "start": "ts-node index.ts"
-  ```
-* In Terminal `npm start`
+* Please see file `hello-world/tasks.md`
 
 <br />
 
@@ -121,22 +110,7 @@ for (let i = 0; i < list.length; i++) {
 ```
 
 ## Hands on
-* My Personal Information
-  * Create a function that accept 3 parameters
-    * firstName type of string
-    * lastName type of string
-    * age type of number
-  * Output of you function should be:
-    ```
-      Hello my name is [fistName] [lastName], age [age]
-    ```
-  * Use `template string`
-  * Use console.log to diplay the output of your function
-* My Favorite Musics
-  * Create a function that accept array of strings
-    * musics type of Array of strings
-  * Display each of the item using for loop
-  * use console.log
+* Please see file `basic-types/tasks.txt`
 <br />
 
 ## Class and Interface
@@ -167,21 +141,7 @@ let greeter = new Greeter("world");
 <br />
 
 #### Hands on
-* My Personal Information
-  * Create a class that accepts 3 parameters in constructor
-    * firstName type of string
-    * lastName type of string
-    * age type of number
-  * In a class you should have 3 properties
-    * firstName type of string
-    * lastName type of string
-    * age type of number 
-  * In a class you should have displayInfo method and return the following:
-  ```
-  Hello my name is [fistName] [lastName], age [age]
-  ```
-  * Use `template string`
-  * Use console.log to diplay the output of your function 
+* Please see file `class/tasks.tx`.
 
 ### Inheritance
 In TypeScript, we can use common object-oriented patterns. One of the most fundamental patterns in class-based programming is being able to extend existing classes to create new ones using inheritance.
@@ -208,24 +168,7 @@ dog.bark();
 <br />
 
 #### Hands on
-* My Personal Information
-  * Create base class i.e Person
-  * In a class you should have 3 properties
-    * firstName type of string
-    * lastName type of string
-    * age type of number 
-  * Create child class i.e MyInfo
-  * extends base or parent class to child class
-  * Child class should have 3 parameters in constructor
-    * firstName type of string
-    * lastName type of string
-    * age type of number
-  * In a class you should have displayInfo method and return the following:
-  ```
-  Hello my name is [fistName] [lastName], age [age]
-  ```
-  * Use `template string`
-  * Use console.log to diplay the output of your function 
+* Please see file `inheritance/tasks.tx`.
 <br />
 
 ### Interface
@@ -259,19 +202,7 @@ printLabel(myObj);
 <br />
 
 #### Hands on
-* My Personal Information
-  * Create interface that has properties of following:
-    * firstName type of string
-    * lastName type of string
-    * age type of number
-  * Create a class that accepts interface in the constructor
-  * Use `implements` to have the construct of interface
-  * In a class you should have displayInfo method and return the following:
-  ```
-  Hello my name is [fistName] [lastName], age [age]
-  ```
-  * Use `template string`
-  * Use console.log to diplay the output of your function 
+* Please see file `interface/tasks.txt`.
 <br />
 
 ## import and export
@@ -302,7 +233,7 @@ export { SampleLabelValue }
 ```typescript
 import { SampleLabelValue } from './sample-label-value';
 ```
-  
+<br />
 
 
 

@@ -1,0 +1,15 @@
+* My Personal Information
+  * Create a class that accepts 3 parameters in constructor
+    * firstName type of string
+    * lastName type of string
+    * age type of number
+  * In a class you should have 3 properties
+    * firstName type of string
+    * lastName type of string
+    * age type of number 
+  * In a class you should have displayInfo method and return the following:
+  ```
+  Hello my name is [fistName] [lastName], age [age]
+  ```
+  * Use `template string`
+  * Use console.log to diplay the output of your function 

@@ -1,0 +1,22 @@
+  * Create a file <your-interface>.ts
+  * Create interface that has properties of following:
+    * firstName type of string
+    * lastName type of string
+    * age type of number
+  * export this interface
+  
+  * Create a file <my-info>.ts
+  * import the interface to this file
+  * Create a class that accepts interface in the constructor
+  * Use `implements` to have the contract of interface
+  * In a class you should have displayInfo method and return the following:
+  ```
+  Hello my name is [fistName] [lastName], age [age]
+  ```
+  * Use `template string`
+  * export this class
+
+  * Create a file main.ts
+  * import class MyInfo
+  * Use console.log to diplay the output of your function
+  

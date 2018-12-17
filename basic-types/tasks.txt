@@ -1,0 +1,16 @@
+* My Personal Information
+  * Create a function that accept 3 parameters
+    * firstName type of string
+    * lastName type of string
+    * age type of number
+  * Output of you function should be:
+    ```
+      Hello my name is [fistName] [lastName], age [age]
+    ```
+  * Use `template string`
+  * Use console.log to diplay the output of your function
+* My Favorite Musics
+  * Create a function that accept array of strings
+    * musics type of Array of strings
+  * Display each of the item using for loop
+  * use console.log

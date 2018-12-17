@@ -1,0 +1,25 @@
+{
+  "name": "type-safe-web-components",
+  "version": "1.0.0",
+  "description": "TypeScript for Beginners",
+  "main": "index.js",
+  "scripts": {
+    "ts-node": "ts-node",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aelbore/type-safe-web-components.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aelbore/type-safe-web-components/issues"
+  },
+  "homepage": "https://github.com/aelbore/type-safe-web-components#readme",
+  "devDependencies": {
+    "http-server": "^0.11.1",
+    "ts-node": "^7.0.1",
+    "typescript": "^3.2.2"
+  }
+}

@@ -1,29 +1,34 @@
-# type-safe-web-components
-Web Components using TypeScript
+# TypeScript 101
+TypeScript for Beginners
 
-## References
+## Topics
+* [Requirements](#requirements)
+  * Code Editor (VSCode)
+  * nodejs version 10+
+* [Getting Started
+* What is TypeScript?
+* "Hello World" in typescript
+* Basic Types
+* Class, Interface, Inheritance, function or arrow functions
+* import and export
+* tsconfig.json config
+* Build Simple Calculator App
+* Build tools
 
-* custom-elements-ts
+
+### Requirements
+* Code Editor
   ```
-  git clone https://github.com/geocine/custom-elements-ts.git
+  Download
+  https://code.visualstudio.com
+
+  Setup
+  Linux (https://code.visualstudio.com/docs/setup/linux)
+  Mac (https://code.visualstudio.com/docs/setup/mac)
+  Windows (https://code.visualstudio.com/docs/setup/windows)
   ```
-* create-custom-elements
+* NodeJS
   ```
-  git clone https://github.com/aelbore/create-custom-elements.git
-  ```
-* ngx-devtools
-  ```
-  git clone https://github.com/aelbore/ngx-devtools.git
-  ```
-* React profile custom element
-  ```
-  git clone https://github.com/aelbore/react-profile-custom-element.git
-  ```
-* Angular profile custom element
-  ```
-  git clone https://github.com/aelbore/angular-profile-custom-element.git
-  ```
-* Vue profile custom element
-  ```
-  git clone https://github.com/aelbore/vue-profile-custom-element.git
+  Download
+  https://nodejs.org
   ```

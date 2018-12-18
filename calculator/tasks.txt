@@ -1,0 +1,7 @@
+* Class Base
+  
+  * Create class Calculator
+  * create methods add, subtract, divide, multiply
+  * each methods will accept 2 parameters, each parameter is type of number
+  * each method should return a result
+

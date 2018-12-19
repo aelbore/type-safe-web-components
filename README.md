@@ -149,7 +149,7 @@ Web Components using TypeScript
     "build": "ts-node rollup.config.ts",
     ```
   * Update `public/index.html` file
-    * Remove the <h1> tag
+    * Remove the `<h1>` tag
     * add script tag
       ```html
         <script src="public/bundle.js"></script>

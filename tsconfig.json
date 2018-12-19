@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "target": "es6",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "removeComments": true,
+    "sourceMap": true,
+    "outDir": "dist",
+    "rootDir": "src",
+    "declaration": true,
+    "baseUrl": ".",
+    "lib": ["es5", "es6", "dom"],
+    "importHelpers": true
+  },
+  "include": [
+    ".tmp/**/*",
+    "src/**/*.ts",
+    "server.ts"
+  ]
+}

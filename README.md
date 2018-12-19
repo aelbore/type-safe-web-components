@@ -154,3 +154,39 @@ Web Components using TypeScript
       ```html
         <script src="public/bundle.js"></script>
       ```
+  * Build & Run the Application
+  ```
+  npm run build
+  npm run serve
+  ```
+<br />
+
+### Create Basic Web Components
+* `Hello World` Web Component
+  ```javascript
+  class HelloWorld extends HTMLElement {
+
+    conntectedCallback() {
+      this.innerHTML = `<h1>Hello World.</h1>`
+    }
+
+  }
+
+  customElements.define('hello-world', HelloWorld);
+  ```
+* Add `<hello-world></hello-world>` tag
+  ```html
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TypeScript 101</title>
+  </head>
+  <body>
+    <hello-world></hello-world>
+    <script src="public/bundle.js"></script>
+  </body>
+  </html>
+  ```

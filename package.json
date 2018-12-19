@@ -4,6 +4,8 @@
   "description": "Web Components using TypeScript",
   "main": "index.js",
   "scripts": {
+    "build": "ts-node rollup.config.ts",
+    "serve": "ts-node server.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,9 +24,8 @@
     "rollup": "^0.68.0",
     "rollup-plugin-typescript2": "^0.18.1",
     "ts-node": "^7.0.1",
+    "tslib": "^1.9.3",
     "typescript": "^3.2.2"
   },
-  "dependencies": {
-    "tslib": "^1.9.3"
-  }
+  "dependencies": {}
 }
